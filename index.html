@@ -8,19 +8,15 @@
     <title>Document</title>
 </head>
 <body class="bg-gray-900">
-    <div class="main w-full relative">
+    <div class="main w-full relative h-full">
         <div class="w-full h-screen relative overflow-hidden">
-            <!-- Adjusted image with correct translation for centering -->
+           
             <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" 
                  src="assets/models/Cyberpunk-2077-glowing-removebg-preview.png" alt="Centered Image"/>
-
-            <!-- Canvas behind the image -->
-            <canvas id="canvas" class="absolute inset-0 w-full h-full"></canvas>
+                 <canvas id="canvas" class="absolute inset-0 w-full h-full"></canvas>
         </div>
-        <div class="w-full h-screen bg-zinc-800"></div>
+        <div class="bg-black h-[300px]"></div>
     </div>
-    
-    <!-- Module JS script -->
     <script type="module" src="index.js"></script>
 </body>
 </html>
