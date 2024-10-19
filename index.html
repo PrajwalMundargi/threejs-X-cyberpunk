@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body class="bg-gray-900">
+    <div class="main w-full relative">
+        <div class="w-full h-screen relative overflow-hidden">
+            <!-- Adjusted image with correct translation for centering -->
+            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10" 
+                 src="assets/models/Cyberpunk-2077-glowing-removebg-preview.png" alt="Centered Image"/>
+
+            <!-- Canvas behind the image -->
+            <canvas id="canvas" class="absolute inset-0 w-full h-full"></canvas>
+        </div>
+        <div class="w-full h-screen bg-zinc-800"></div>
+    </div>
+    
+    <!-- Module JS script -->
+    <script type="module" src="index.js"></script>
+</body>
+</html>
